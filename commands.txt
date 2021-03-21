@@ -1,0 +1,24 @@
+ssh -i path_of_pem_file ubuntu@ipaddress
+
+
+chmod 400 path_of_pem_file
+
+Within instance
+sudo mkdir gafolder
+ls -l
+sudo chown ubuntu:ubuntu gafolder
+
+In local
+scp -i creds/ga2103.pem dummy.txt ubuntu@35.154.77.35:/home/ubuntu/gafolder
+
+At times I might want to modify files within server
+We need linux editors
+vim 
+nano
+	Ctrl x
+	
+nano dummypython.py
+edit the files
+ctrl x
+y
+enter
